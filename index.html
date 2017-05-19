@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Parallax.js | Separate Axis Example</title>
+
+    <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="nav">
+    <span style="font-size:30px;cursor:pointer; float:right" onclick="openNav()">&#9776;</span>
+    </nav>
+       
+    <div id="main">
+        <section id="one">
+            <div id="container" class="container">
+                <ul id="scene" class="scene">
+                    <li class="layer" data-depth="0.00"></li>
+                    <li class="layer" data-depth="0.05"><div class="background1" id="background1"></li>
+                    <li class="layer" data-depth="0.40"><img src="imgs/layer2.png"></li>
+                    <li class="layer" data-depth-x="-0.30" data-depth-y="-0.20"><img src="imgs/layer3.png"></li>
+                    <li class="layer" data-depth-x="-0.60" data-depth-y="-0.20"><img src="imgs/layer4.png"></li>
+                    <li class="layer" data-depth="0.90"><img src="imgs/layer5.png" style="width:80%; text-align: center; margin:0 auto;"></li>
+                    <li class="layer bg" data-depth="0.00"><div class="bg_blue" id="bg_blue"></div></li>
+                    <!-- <li class="layer" data-depth="1.00"><img src="imgs/layer1.png"></li>
+                    <li class="layer" data-depth-x="0.80" data-depth-y="-0.80"><img src="imgs/layer2.png"></li>
+                    <li class="layer" data-depth-x="-0.60" data-depth-y="-0.20"><img src="imgs/layer3.png"></li>
+                    <li class="layer" data-depth="0.40" data-depth-y="-0.30"><img src="imgs/layer4.png"></li>
+                    <li class="layer" data-depth="0.20"><img src="imgs/layer5.png"></li> -->
+                </ul>            
+            </div>
+
+        </section>
+        <section id="two">Page 2</section>
+        <section id="three">Page 3</section>
+        <section id="four">Page 4</section>
+        <section id="five">Page 5</section>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#one">one</a>
+        <a href="#two">two</a>
+        <a href="#three">three</a>
+        <a href="#four">four</a>
+        <a href="#five">five</a>
+    </div>
+    <!-- Scripts -->
+    <script src="js/librariesc.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script>
+    // var $scene = $('#scene'),
+    //     // $bluebg = $('#bg_blue');
+    // // Resize handler.
+    // (resize = function() {
+    //     $scene[0].style.width = window.innerWidth + 'px';
+    //     $scene[0].style.height = window.innerHeight + 'px';
+    //     $bluebg[0].style.width = window.innerWidth + 'px';
+    //     $bluebg[0].style.height = window.innerHeight + 'px';
+    // })();
+
+    // Pretty simple huh?
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginRight= "0";
+    }
+    </script>
+</body>
+</html>

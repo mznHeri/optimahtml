@@ -99,16 +99,36 @@ section {
 #three {
     background: #0089DE;
     padding-top: 15%;
+    padding-bottom: 24%;
 }
 #four {
-    background: #BED28D;
+    background: #061341;
+    padding-bottom: 0;
 }
+
 #five {
-    background: #95211D;
+    background: #0AADB0;
+    padding-bottom: 24%;
+}
+
+#six {
+    background: #061341;
+}
+
+#seven {
+  background: #0089DE;
+}
+
+#eight {
+  background: #E6E6E6;
 }
 
 .cont-ocs {
   margin-top: 170px;
+  position: relative;
+}
+
+.cont-ops {
   position: relative;
 }
 
@@ -534,6 +554,343 @@ h2.x32 {
 
 #three .container.v2 {
     margin-top: 10%;
+}
+
+.imgServ {
+    position: relative;
+    top: -285px;
+}
+
+.arrow-down {
+  display: block;
+  width: 12px;
+  margin: 0 auto;
+}
+
+.arrow-down img {
+  width: auto;  
+}
+
+.cont-box-serv {
+    position: relative;
+    top: -260px;
+    margin-bottom: -120px;
+    float: left;
+    width: 100%;
+}
+
+.sx-small {
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.sx-big {
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.cst-tab {
+    border: none;
+}
+
+.cst-tab li {
+    border: 1px solid #11D3D6;
+}
+
+.cst-tab li {
+    border: 1px solid #11D3D6;
+    width: 33%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cst-tab li:first-child {
+    border-right: none;
+}
+
+.cst-tab li:last-child {
+    border-left: none;
+}
+
+.cst-tab li a {
+    color: #FFF;
+    padding: 20px 0;
+    margin: 0;
+    font-weight: 100;
+    text-shadow: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.cst-tab li.active , .cst-tab li:hover {
+    border-bottom: 3px solid #11D3D6;
+}
+
+.cst-tab li.active a {
+    background: none; 
+    border: 1px solid #061341;
+    color: #11D3D6;
+    padding-bottom: 18px;
+}
+
+.cst-tab li a:hover, .cst-tab li a:focus, .cst-tab li.active a:hover, .cst-tab li.active a:focus {
+    color: #11D3D6;
+    background: none;
+    border: 1px solid #061341;
+    padding-bottom: 18px;
+}
+
+.table-tabs {
+    margin-top: 55px;
+}
+
+.tab-content {
+    margin-top: 65px;
+    text-align: center;
+    color: #FFF;
+}
+
+.cst-pane span {
+  font-size: 12px;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.cst-pane h3 {
+  font-size: 38px;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.line-ttl {
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #6A7AE6;
+  margin: 20px auto 30px;
+}
+
+.cst-pane p {
+  font-weight: 100;
+  line-height: 30px;
+  font-family: 'Hind Madurai', sans-serif;
+  color: #ececec;
+}
+
+.tab-content .cst-table {
+  margin-top: 30px;
+}
+
+table.cst-table {
+    width: 100%;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+table.cst-table th, table.cst-table td {
+  padding: 20px 0;
+}
+
+table.cst-table th {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  background: #11D3D6;
+  text-align: center;
+  letter-spacing: 2px;
+  border-left: 1px solid #FFFFFF;
+  width: 25%;
+}
+
+table.cst-table td {
+  padding: 20px 30px;
+  line-height: 30px;
+  font-weight: 100;
+  vertical-align: top;
+  color: #ececec;
+  border-left: 1px solid #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  background: #99A7FF;
+}
+
+.dsp-block {
+  display: block;
+  margin: 30px auto 60px;
+  width: 145px;
+}
+
+span.readmore.cl-white.dsp-block:hover {
+  color: #061341;
+}
+
+table.cst-table th:first-child, table.cst-table td:first-child {
+  border-left: none;
+}
+
+table.cst-table tr:nth-child(odd) td {
+  background: #6A7AE6;
+}
+
+.cont-hov {
+    position: relative;
+}
+
+.image-hov {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-hov {
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  opacity: 0;
+  position: absolute;
+  top: 0;  
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)*/
+}
+
+.cont-hov:hover .image-hov {
+  opacity: 1;
+}
+
+.cont-hov:hover .middle-hov {
+  opacity: 1;
+}
+
+.text-hov a {  
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  margin-top: 65px;
+  border: none;
+  font-weight: 100;
+  font-family: 'Hind Madurai', sans-serif;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.text-hov a:hover {
+  text-decoration: none;
+}
+
+.line-under-img-box {
+  display: block;
+  width: 24px;
+  margin: 0 auto;
+  background: #E8B13A;
+  height: 2px;  
+}
+
+.subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Hind Madurai', sans-serif;
+  text-align: center;
+}
+
+.cl-gr {
+  color: #ececec;
+}
+
+.top-title {
+    font-size: 46px;
+}
+
+.line-ttl.cl-white {
+    background: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+
+.line-ttl.cl-purple {
+    background: #061341;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+
+.padding5 {
+    padding: 0 5px;
+}
+
+.cont-detail-news-box {
+  margin-top: 40px;
+}
+
+.date-news {
+  display: block;
+  color: #ececec;
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.title-news {
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFF;
+  margin-top: 8px;
+  font-weight: 100;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.margintop30 {
+  margin-top: 30px;
+}
+
+.flexslider.cst-flex {
+    background: none;
+    border: none;
+    margin: 40px 0 90px;
+}
+
+.flex-direction-nav a {
+  height: 45px;
+}
+
+.control-nav-cst {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.sliderNext, .sliderPrev {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  float: left;
+  margin: 0 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.sliderNext i, .sliderPrev i {
+  margin-top: 5px;
+}
+
+.sliderNext:hover, .sliderPrev:hover {
+  background: #000;
+  color: #FFF;
 }
 
 @media (max-width: 1200px) {

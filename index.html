@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
     <!-- Font -->
@@ -21,16 +22,22 @@
     <link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <script>
         $(function() {
             $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
+                    var check = false;
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
+                    if(target.selector == '#tabltoggle1' || target.selector == '#tabltoggle2' || target.selector == '#tabltoggle3') {
+                        check = true;
+                    }                  
+                    if (target.length && check == false) {
                         $('html,body').animate({
                             scrollTop: target.offset().top
                         }, 1000);
@@ -105,7 +112,7 @@
                     <li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     <li><a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                     <li>
-                        <a onclick="openNav()" href="#bars">&#9776;</a>
+                        <a onclick="openNav()" href="#sidemenu">&#9776;</a>
                     </li>
                 </ul>
             </div>
@@ -230,8 +237,256 @@
                 </div>
                 
             </section>
-            <section id="four">Page 4</section>
-            <section id="five">Page 5</section>
+            <section id="four">
+                
+                <div class="container cont-ops">
+                    <div class="row">
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12"><div class="imgServ"><img src="imgs/img-service.png"></div></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>            
+                <div class="container">
+                    <div class="row">
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12">
+                        <div class="cont-box-serv">
+                            <h2 class="sx-small text-center cl-yellow ltsp2">WHAT WE DO</h2>
+                            <h3 class="sx-big text-center cl-white ">We believe in the strength and<br>benefits of partnership to achieve<br>stronger commitment, better ideas<br>and better results.</h3>
+                            <div class="clearfix"></div>
+                            <span class="arrow-down text-center"><img src="imgs/arrow_down.png"></span>
+                            <div class="clearfix"></div>
+                            <div class="table-tabs">
+                                
+                                <ul class="nav nav-tabs cst-tab">
+                                  <li class="active"><a data-toggle="tab" href="#tabltoggle1">Channel Planing</a></li>
+                                  <li><a data-toggle="tab" href="#tabltoggle2">Tactics Investment</a></li>
+                                  <li><a data-toggle="tab" href="#tabltoggle3">Digital Exposures</a></li>
+                                </ul>
+
+                                <!-- <div class="col-lg-4 no-padding">
+                                    <a data-toggle="tab" href="#tabltoggle1">Home</a>
+                                </div>
+
+                                <div class="col-lg-4 no-padding">
+                                    <a data-toggle="tab" href="#tabltoggle2">Home</a>
+                                </div>
+
+                                <div class="col-lg-4 no-padding">
+                                    <a data-toggle="tab" href="#tabltoggle3">Home</a>
+                                </div> -->
+
+                                <div class="tab-content">
+                                  <div id="tabltoggle1" class="cst-pane tab-pane fade in active">
+                                    <span class="ltsp3">tactics investment</span>
+                                    <h3 class="cl-blue">TACTICAL PLAN AND EXECUTION</h3>
+                                    <span class="line-ttl"></span>
+                                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                                        <p>We prioritize in understanding further the consumer or audience media behaviours on a continuous basis and monitor the results of the campaign compared to its competitors in the category.<br><br>The key learnings from the above process will help plan and develop a better media communication plan to achieve both short and long term results of a campaign.<br><br>It is our commitment to provide periodical report in regards to the media performance of a campaign</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12">
+                                        
+                                        <table class="cst-table">
+                                          <thead>
+                                            <tr>
+                                              <th>DESCRIPTION</th>
+                                              <th>CONTENTS</th>
+                                              <th>FORMATS</th>
+                                              <th>TIMING</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>Media<br>Recommendation</td>
+                                              <td>Objective, Strategy, Tactics,<br>Outline/Costings estimation</td>
+                                              <td>Presentation</td>
+                                              <td>New product campaign</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Media<br>Recommendation</td>
+                                              <td>Objective, Strategy, Tactics,<br>Outline/Costings estimation</td>
+                                              <td>Presentation</td>
+                                              <td>New product campaign</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Media<br>Recommendation</td>
+                                              <td>Objective, Strategy, Tactics,<br>Outline/Costings estimation</td>
+                                              <td>Presentation</td>
+                                              <td>New product campaign</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Media<br>Recommendation</td>
+                                              <td>Objective, Strategy, Tactics,<br>Outline/Costings estimation</td>
+                                              <td>Presentation</td>
+                                              <td>New product campaign</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+
+
+                                    </div>
+                                  </div>
+                                  <div id="tabltoggle2" class="cst-pane tab-pane fade">
+                                    <span class="ltsp3">tactics investment</span>
+                                    <h3 class="cl-blue">TACTICAL PLAN AND EXECUTION</h3>
+                                    <span class="line-ttl"></span>
+                                    <p>We prioritize in understanding further the consumer or audience media behaviours on a continuous basis and monitor the results of the campaign compared to its competitors in the category.<br><br>The key learnings from the above process will help plan and develop a better media communication plan to achieve both short and long term results of a campaign.<br><br>It is our commitment to provide periodical report in regards to the media performance of a campaign</p>
+                                  </div>
+                                  <div id="tabltoggle3" class="cst-pane tab-pane fade">
+                                    <span class="ltsp3">tactics investment</span>
+                                    <h3 class="cl-blue">TACTICAL PLAN AND EXECUTION</h3>
+                                    <span class="line-ttl"></span>
+                                    <p>We prioritize in understanding further the consumer or audience media behaviours on a continuous basis and monitor the results of the campaign compared to its competitors in the category.<br><br>The key learnings from the above process will help plan and develop a better media communication plan to achieve both short and long term results of a campaign.<br><br>It is our commitment to provide periodical report in regards to the media performance of a campaign</p>
+                                  </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="five">
+                
+                <div class="container v2">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <span class="line-v"></span>
+                            <h2 class="x32 cl-white">Brand <br><span class="cl-yellow">Advocacy</span></h2>
+                            <div class="col-lg-2 nopadding-left">
+                                <span class="line-h"></span>
+                            </div>
+                            <div class="col-lg-10">
+                                <h3 class="nb ltsp3 cl-yellow">WORK</h3>
+                                <div class="col-lg-11 nopadding-left clearfix">
+                                    <p class="os1 cl-white">We are happy to provide innovative channel solutions and create tailor-made content to inspire & engage the audience. It is our intention to create impact through touchpoints for consumer & brand to interact and build ‘earned brand’ via brand advocacy.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <span class="readmore cl-white" href="#">READ MORE</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 imopt1"><img src="imgs/img-about.jpg"></div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <h2 class="pa1 cl-white">The quality of the brand is<br>determined by the its values<br>and beliefs that bind the audience<br>to become a part of the<br>interaction within the brand’s<br>ecosystem.</h2>
+                            <p class="opsans os2 cl-white">Media Science is a  fundamental method to create effective and efficient media communication campaign to achieve creativity and innovation in interacting with the audience. Designing a two-way mutual interaction between the brand and the audience within the brand’s communication ecosystem is the competitive advantage to an impactful campaign not only in having the message simply told, moreso it is demonstrated and experieced. The brand as an ecosystem of communication and interaction provides comprehensive solution that bonds the consumers as part or the brand’s existence.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="six">
+                <div class="container cont-ops">
+                    <div class="row">
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12"><div class="imgServ"><img src="imgs/img-service.png"></div></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>            
+                <div class="container">
+                    <div class="row">
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12">
+                        <div class="cont-box-serv">
+                            <h2 class="sx-small text-center cl-yellow ltsp2">COMMUNITY MARKETING</h2>
+                            <h3 class="sx-big text-center cl-white ">Community Marketing  to achieve<br>a bigger purpose for effective<br>communication result. </h3>
+                            <div class="clearfix"></div>
+                            <span class="readmore cl-white dsp-block" href="#">READ MORE</span>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-8 col-lg-offset-2 text-center">
+                                <p class="opsans os2 cl-white">The collaboration between Optima Media and InterfaceBPN gave birth to  Community Marketing as an innovative medium channel to optimize and create that competitive advantage to the existing media channels ie. ATL, BTL and digital.  Community Marketing adds value to today’s marketing & communication industry. The communication method today demands interaction with the public. The shift in the public’s communication and social dynamics is due to the dominant impact of the digital media that encourages the community groupings to take form and shape as part of today’s social phenomenon. <br><br>Community Marketing is an innovative method adapted to the dynamics of the society today. It is strongly characterized by the partnership value that reaches and interacts directly with the purpose of every communities. Furthermore, it can inspire to create new communities. The competitive advantage of community marketing is the capacity to engage with communities that function as influencers and organic brand advocates.<br><br>Communities contribute to the brand via collaborative programs ie. events/competitions, content generation and participation and interaction therefore adding value to the brand communication.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="seven">
+                <div class="container v2">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <span class="subtitle ltsp2 cl-gr">HOT</span>
+                            <h1 class="top-title text-center cl-white">Latest News</h1>
+                            <span class="line-ttl cl-white"></span>
+                        </div>
+                        <div class="col-lg-4 padding5">
+                            <div class="cont-hov">
+                              <img src="imgs/img-news.jpg" class="image-hov">
+                              <div class="middle-hov">
+                                <div class="text-hov"><a href="#">READ MORE</a></div>
+                                <span class="line-under-img-box"></span>
+                              </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="cont-detail-news-box text-center">
+                                <span class="date-news">SELASA, 7 APRIL 2017</span>
+                                <h1 class="title-news">Optima & InterfaceBPN Relaunch </h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 padding5">
+                            <div class="cont-hov">
+                              <img src="imgs/img-news.jpg" class="image-hov">
+                              <div class="middle-hov">
+                                <div class="text-hov"><a href="#">READ MORE</a></div>
+                                <span class="line-under-img-box"></span>
+                              </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="cont-detail-news-box text-center">
+                                <span class="date-news">SELASA, 7 APRIL 2017</span>
+                                <h1 class="title-news">Optima & InterfaceBPN Relaunch </h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 padding5">
+                            <div class="cont-hov">
+                              <img src="imgs/img-news.jpg" class="image-hov">
+                              <div class="middle-hov">
+                                <div class="text-hov"><a href="#">READ MORE</a></div>
+                                <span class="line-under-img-box"></span>
+                              </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="cont-detail-news-box text-center">
+                                <span class="date-news">SELASA, 7 APRIL 2017</span>
+                                <h1 class="title-news">Optima & InterfaceBPN Relaunch </h1>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center margintop30"><span class="readmore cl-white ltsp2" href="#">ALL NEWS</span></div>
+                    </div>
+                </div>
+            </section>
+            <section id="eight">
+                <div class="container v2">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <span class="subtitle ltsp2 cl-blue">OURCLIENTS</span>
+                            <h1 class="top-title text-center cl-purple">Happy Customers</h1>
+                            <span class="line-ttl cl-purple"></span>
+                        </div>
+                        <div class="clearfix"></div>
+<div class="col-lg-12">
+<div class="flexslider cst-flex carousel">
+  <ul class="slides">
+    <li><div class="col-lg-10"><img src="imgs/astra-international.png"></div></li>
+    <li><div class="col-lg-10"><img src="imgs/medikon.png"></div></li>
+    <li><div class="col-lg-10"><img src="imgs/hooq.png"></div></li>
+    <li><div class="col-lg-10"><img src="imgs/astra-international.png"></div></li>
+  </ul>
+</div>
+<div class="control-nav-cst">
+<span class="sliderNext"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+<span class="sliderPrev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+</div>
+</div>
+
+
+
+                    </div>
+                </div>
+            </section>
         </div>
         <div id="mySidenav" class="sidenav_cst">
             <a href="javascript:void(0)" class="closebtn_cst" onclick="closeNav()">&times;</a>
@@ -242,12 +497,12 @@
                 <ul class="menu_side">
                     <li><a href="#one">Home</a></li>
                     <li><a href="#two">About Us</a></li>
-                    <li><a href="#three">Service</a></li>
-                    <li><a href="#four">Work</a></li>
-                    <li><a href="#five">Collaboration</a></li>
-                    <li><a href="#six">News</a></li>
-                    <li><a href="#seven">Client</a></li>
-                    <li><a href="#eight">Contact us</a></li>
+                    <li><a href="#four">Service</a></li>
+                    <li><a href="#five">Work</a></li>
+                    <li><a href="#six">Collaboration</a></li>
+                    <li><a href="#seven">News</a></li>
+                    <li><a href="#eight">Client</a></li>
+                    <li><a href="#nine">Contact us</a></li>
                 </ul>
                 <ul class="social_side">
                     <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -285,5 +540,31 @@
         document.getElementById("main_cst").style.marginRight= "0";
     }
     </script>
+    <script src="js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+        $(window).load(function(){
+          $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 310,
+            itemMargin: 5,
+            directionNav: false,
+            controlNav: false
+            // pausePlay: true,
+            // start: function(){
+            //   // $('body').removeClass('loading');
+            // }
+          });
+            $('.sliderNext').on('click', function(){
+                $('.flexslider').flexslider('next');;
+                return false;
+            });
+            $('.sliderPrev').on('click', function(){
+                $('.flexslider').flexslider('prev');;
+                return false;
+            });
+        });
+      </script>
 </body>
 </html>

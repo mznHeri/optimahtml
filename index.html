@@ -11,14 +11,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
         $(function() {
             $('a[href*=#]:not([href=#])').click(function() {
@@ -37,43 +42,222 @@
     </script>
 </head>
 <body>
-    <nav class="nav">
-    <span style="font-size:30px;cursor:pointer; float:right" onclick="openNav()">&#9776;</span>
-    </nav>
-       
-    <div id="main">
-        <section id="one">
-            <div id="container" class="container">
-                <ul id="scene" class="scene">
-                    <li class="layer" data-depth="0.00"></li>
-                    <li class="layer" data-depth="0.05"><div class="background1" id="background1"></li>
-                    <li class="layer" data-depth="0.40"><img src="imgs/layer2.png"></li>
-                    <li class="layer" data-depth-x="-0.30" data-depth-y="-0.20"><img src="imgs/layer3.png"></li>
-                    <li class="layer" data-depth-x="-0.60" data-depth-y="-0.20"><img src="imgs/layer4.png"></li>
-                    <li class="layer" data-depth="0.90"><img src="imgs/layer5.png" style="width:80%; text-align: center; margin:0 auto;"></li>
-                    <li class="layer bg" data-depth="0.00"><div class="bg_blue" id="bg_blue"></div></li>
-                    <!-- <li class="layer" data-depth="1.00"><img src="imgs/layer1.png"></li>
-                    <li class="layer" data-depth-x="0.80" data-depth-y="-0.80"><img src="imgs/layer2.png"></li>
-                    <li class="layer" data-depth-x="-0.60" data-depth-y="-0.20"><img src="imgs/layer3.png"></li>
-                    <li class="layer" data-depth="0.40" data-depth-y="-0.30"><img src="imgs/layer4.png"></li>
-                    <li class="layer" data-depth="0.20"><img src="imgs/layer5.png"></li> -->
-                </ul>            
-            </div>
 
-        </section>
-        <section id="two">Page 2</section>
-        <section id="three">Page 3</section>
-        <section id="four">Page 4</section>
-        <section id="five">Page 5</section>
-    </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#one">one</a>
-        <a href="#two">two</a>
-        <a href="#three">three</a>
-        <a href="#four">four</a>
-        <a href="#five">five</a>
-    </div>
+    <header>
+        <div id="main_cst" class="main_cst">
+            <section id="one">
+                <div id="container_cst" class="container_cst">
+                    <ul id="scene" class="scene_cst">
+                        <li class="layer" data-depth="0.00"></li>
+                        <li class="layer" data-depth="0.05"><div class="background1" id="background1"></li>
+                        <li class="layer" data-depth="0.40"><img src="imgs/layer2.png"></li>
+                        <li class="layer" data-depth-x="-0.30" data-depth-y="-0.20"><img src="imgs/layer3.png"></li>
+                        <li class="layer" data-depth-x="-0.60" data-depth-y="-0.20"><img src="imgs/layer4.png"></li>
+                        <li class="layer" data-depth="0.90"><img src="imgs/layer5.png" style="width:80%; text-align: center; margin:0 auto;"></li>
+                        <li class="layer bg" data-depth="0.00"><div class="bg_blue" id="bg_blue"></div></li>
+
+                        <li class="layer" data-depth="0.00">
+                            <div class="container intro">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="intro-text">
+                                            <h1>Creativity and Innovation<br><span class="cl-blue">in Media Science</span></h1>
+                                            <div class="scroll_down">
+                                                <img src="imgs/scroll_down_a.png">
+                                                <!-- <div class="line-arrow-down-center">
+                                                    <div class="arrow-down"></div>
+                                                    <div class="head-arrow-down"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                                    <div class="img-scroll-down">
+                                                        <img src="imgs/scroll_down.png">
+                                                    </div>
+                                                </div> -->
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="layer" data-depth="0.00">
+                            <div class="container" id="maincontent" tabindex="-1">
+                                <div class="row">
+                                    <div class="col-lg-12">
+
+<nav id="mainNav" class="navbar navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+<!--             <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+            </div> -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left mzn_logo_cst">
+                    <li><a href=""><img src="imgs/optima_logo.png"></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right social_header">
+                    <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a onclick="openNav()" href="#bars">&#9776;</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="layer" data-depth="1.00"><img src="imgs/layer1.png"></li>
+                        <li class="layer" data-depth-x="0.80" data-depth-y="-0.80"><img src="imgs/layer2.png"></li>
+                        <li class="layer" data-depth-x="-0.60" data-depth-y="-0.20"><img src="imgs/layer3.png"></li>
+                        <li class="layer" data-depth="0.40" data-depth-y="-0.30"><img src="imgs/layer4.png"></li>
+                        <li class="layer" data-depth="0.20"><img src="imgs/layer5.png"></li> -->
+                    </ul>            
+                </div>
+
+            </section>
+            <section id="two">
+                <div class="container v2">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <span class="line-v"></span>
+                            <h2 class="x32">What is <br><span class="cl-blue">Media Science</span></h2>
+                            <div class="col-lg-2 nopadding-left">
+                                <span class="line-h"></span>
+                            </div>
+                            <div class="col-lg-10">
+                                <h3 class="nb ltsp3">MEDIA SCIENCE</h3>
+                                <div class="col-lg-11 nopadding-left clearfix">
+                                    <p class="os1">There are many variety of media channels to choose from to distribute messages in any communication campaign. As the message sender, we must consider how each medium will shape the content via all media channels like television, print, radio, website, social media channels, out of home, etc. </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <span class="readmore" href="#">READ MORE</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 imopt1"><img src="imgs/img-about.jpg"></div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <h2 class="pa1 cl-purple">To use each media effectively,<br>we have to gain an understanding<br>how each channel  gives form to the<br>communication.</h2>
+                            <p class="opsans os2">According to Marshall McLuhan’s  “The Medium is the Message:” each medium, independent of the content it mediates, has its own intrinsic effects which are its unique message. It is the “medium that shapes and controls the scale and form of human association and action.” (Understanding Media, NY, 1964, p. 9). <br><br>The media channel will determine how the message will be transmitted and distributed. Therefore, the media channel will influence the way the audience will receive the message and impact the communication effect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container cont-ocs">
+                    <div class="row">
+                        <div class="clearfix"></div>
+                        <div class="inner-cont-ocs clean-cst">
+                            <div class="col-lg-4 no-padding">
+                                <div class="cont-box cl1 clean-cst">
+                                    <div class="inner-box col-lg-12">
+                                        <div class="inner-box2 clean-cst">
+                                            <span class="numb opsans">01</span>
+                                            <div class="clearfix"></div>
+                                            <span class="ttl">Innovative<br>Channel Solutions</span>
+                                            <div class="clearfix"></div>
+                                            <span class="readmore ltsp2">READ MORE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 no-padding">
+                                <div class="cont-box cl2 clean-cst">
+                                    <div class="inner-box col-lg-12">
+                                        <div class="inner-box2 clean-cst">
+                                            <span class="numb opsans">02</span>
+                                            <div class="clearfix"></div>
+                                            <span class="ttl">Content to<br>Inspire & Engage</span>
+                                            <div class="clearfix"></div>
+                                            <span class="readmore ltsp2">READ MORE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 no-padding">
+                                <div class="cont-box cl3 clean-cst">
+                                    <div class="inner-box col-lg-12">
+                                        <div class="inner-box2 clean-cst">
+                                            <span class="numb opsans">03</span>
+                                            <div class="clearfix"></div>
+                                            <span class="ttl">Brand Interaction &<br>Brand Advocacy</span>
+                                            <div class="clearfix"></div>
+                                            <span class="readmore ltsp2">READ MORE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="three">
+                
+
+                <div class="container v2">
+                    <div class="row">
+                        <div class="col-lg-5 imopt1"><img src="imgs/img-about2.jpg"></div>
+                        <div class="col-lg-7">
+                            <span class="line-v"></span>
+                            <h2 class="x32 cl-white">Media <br>Communication<br><span class="cl-yellow">Specialist</span></h2>
+                            <div class="col-lg-2 nopadding-left">
+                                <span class="line-h"></span>
+                            </div>
+                            <div class="col-lg-10">
+                                <h3 class="nb ltsp3 cl-yellow">ABOUT US</h3>
+                                <div class="col-lg-11 nopadding-left clearfix">
+                                    <p class="os1 cl-white">We develop media communication plan including strategy and tactical methods to achieve the campaign’s objective, and launch a brand campaign.  We look into the use of effective media aiming for consumer interaction  with creative blend  whilst ensuring efficiency.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <span class="readmore cl-white" href="#">READ MORE</span>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <h2 class="pa1 cl-white">We believe in the role of audience<br>interaction in creating and<br>executing a media communication<br>plan cohesively.</h2>
+                            <p class="opsans os2 cl-white">Since our inception, we’ve provided media services to clients such as Astra International, Sanken, Gulaku and Sequislife along with portfolio of industries including technology, healthcare, financial, retail, residential, education and the nonprofit sector.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="four">Page 4</section>
+            <section id="five">Page 5</section>
+        </div>
+        <div id="mySidenav" class="sidenav_cst">
+            <a href="javascript:void(0)" class="closebtn_cst" onclick="closeNav()">&times;</a>
+            <div class="in_side">
+                <div class="logo_side">
+                    <a href="#one"><img src="imgs/optima_logo_mobile.png"></a>
+                </div>
+                <ul class="menu_side">
+                    <li><a href="#one">Home</a></li>
+                    <li><a href="#two">About Us</a></li>
+                    <li><a href="#three">Service</a></li>
+                    <li><a href="#four">Work</a></li>
+                    <li><a href="#five">Collaboration</a></li>
+                    <li><a href="#six">News</a></li>
+                    <li><a href="#seven">Client</a></li>
+                    <li><a href="#eight">Contact us</a></li>
+                </ul>
+                <ul class="social_side">
+                    <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <!-- Scripts -->
     <script src="js/librariesc.min.js"></script>
     <script src="js/parallax.js"></script>
@@ -93,12 +277,12 @@
     var parallax = new Parallax(scene);
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginRight = "250px";
+        document.getElementById("main_cst").style.marginRight = "250px";
     }
 
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginRight= "0";
+        document.getElementById("main_cst").style.marginRight= "0";
     }
     </script>
 </body>

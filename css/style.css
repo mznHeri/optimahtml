@@ -123,6 +123,10 @@ section {
   background: #E6E6E6;
 }
 
+#nine {
+  background: #061341;
+}
+
 .cont-ocs {
   margin-top: 170px;
   position: relative;
@@ -544,6 +548,7 @@ h2.x32 {
   border: 1px solid;
   font-size: 12px;
   font-family: 'Hind Madurai', sans-serif;
+  background: none;
 }
 
 .inner-box .readmore:hover {
@@ -891,6 +896,214 @@ table.cst-table tr:nth-child(odd) td {
 .sliderNext:hover, .sliderPrev:hover {
   background: #000;
   color: #FFF;
+}
+
+.gpmargin {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+.lbl {
+    display: block;
+    float: left;
+    width: 92px;
+    vertical-align: bottom;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #ececec;
+}
+
+label.form-check-label {
+    float: left;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.form-inline .cst-fm {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    border-radius: 0;
+    width: 75%;
+    float: left;
+    color: #ececec;
+    font-weight: 100;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.form-inline .cst-fm:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-submit-cst .btn, .btn-submit-cst .btn:focus {
+   background: url("../imgs/arrow_send.png") 0 50% no-repeat;
+    text-shadow: none;
+    color: #FFF;
+    border: none;
+    box-shadow: none;
+    font-weight: 100;
+    outline: none;
+    width: 135px;
+    box-shadow: none;
+    margin-top: 25px;
+}
+
+.mar-right15 {
+  margin-right: 15px;
+}
+
+ul.footer-info {
+    list-style: none;
+    padding: 0;
+    color: #FFF;
+}
+
+ul.footer-info li {
+    padding-left: 44px;
+    position: relative;
+    color: #ececec;
+    font-weight: 100;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+ul.footer-info li a {
+  color: #ececec;
+}
+
+.footer-info li i {
+    left: 0;
+    position: absolute;
+    font-size: 15px;
+    top: 5px;
+}
+
+.container-social-media ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    font-size: 18px;
+}
+
+.container-social-media ul li {
+  display: inline-block;
+}
+
+.container-social-media ul a {
+    color: #ececec;
+    padding-right: 30px;
+}
+
+.container-social-media ul li:last-child a {  
+    padding-right: 0;
+}
+
+.container-social-media {
+    margin-top: 35px;
+}
+
+.line-lg {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 2px;
+    background: #00AEEF;
+    margin: 60px 0 30px;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    color: #ececec;
+    font-weight: 100;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 10px;
+}
+
+.cst-modal .modal-content {
+    background: #061341;
+    border-radius: 0;
+    color: #FFF;
+    padding: 2%;
+}
+
+.modal-dialog {
+    width: 800px;
+}
+
+span.simb-cls {
+    border: 1px solid;
+    padding: 2px 2px 2px 3px;
+    text-align: center;
+    font-size: 15px;
+}
+
+button.close.cst-close {
+    text-shadow: none;
+    color: #ececec;
+    opacity: 1;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+button.close.cst-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+span.number-mdl {
+    display: block;
+    font-size: 68px;
+    font-weight: 100;
+    text-align: center;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.inner-modal-body h3 {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+span.line-ttl.cl-blue {
+    background: #00AEEF;
+}
+
+h3.sub-ttl-body {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.cont-inner-modal-p {
+    padding: 0 6% 6%;
+}
+
+.cont-inner-modal-p p {
+    margin-bottom: 70px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #ececec;
+}
+
+#mymodal2.cst-modal .modal-content {
+    background: #0D1D57;
+}
+
+#mymodal3.cst-modal .modal-content {
+    background: #182B70;
 }
 
 @media (max-width: 1200px) {

@@ -1675,7 +1675,7 @@ span.sh {
 
 @media (max-width: 520px){
     .cont-img-mbl .intro-text h1 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     h2.x32 {
         font-size: 2em;
@@ -1710,7 +1710,7 @@ span.sh {
     .cont-img-mbl .container.intro {
         position: absolute;
         top: 40%;
-        width: 92%;
+        width: 99%;
         padding: 0 4%;
     }
 
@@ -1756,7 +1756,7 @@ span.sh {
 
 @media (max-width: 425px){
     ul.nav.navbar-nav.navbar-left.mzn_logo_cst {
-        width: 100%;
+        /*width: 100%;*/
     }
 
     ul.nav.navbar-nav.navbar-left.mzn_logo_cst img {        
@@ -1764,7 +1764,11 @@ span.sh {
     }
 
     ul.nav.navbar-nav.navbar-right.social_header {
-        padding-top: 0;
+        padding-top: 30px;
+    }
+
+    .affix ul.nav.navbar-nav.navbar-right.social_header {
+        padding-top: 22px;
     }
 
     .cont-img-mbl .container.intro {        
@@ -1786,5 +1790,13 @@ span.sh {
 @media (max-width: 330px){
     .cont-img-mbl .scroll_down img {
         width: 25px;
+    }
+
+    .navbar-nav.social_header li a {
+        padding: 12px 5px;
+    }
+
+    .intro-text h1 {
+        margin-bottom: 30px;
     }
 }

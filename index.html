@@ -139,6 +139,21 @@
     <header>
         <div id="main_cst" class="main_cst">
             <section id="one">
+                <div class="cont-img-mbl">
+                    <img src="imgs/img-mobile-one.jpg">
+                    <div class="container intro">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="intro-text">
+                                    <h1>Creativity and Innovation<br><span class="cl-blue">in Media Science</span></h1>
+                                    <div class="scroll_down">
+                                        <img src="imgs/scroll_down_a.png">          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="container_cst" class="container_cst">
                     <ul id="scene" class="scene_cst">
                         <li class="layer" data-depth="0.00"></li>
@@ -182,6 +197,7 @@
             <section id="two">
                 <div class="container v2">
                     <div class="row">
+                        <div class="col-lg-5 imopt1 imopt2"><img src="imgs/img-about.jpg"></div>
                         <div class="col-lg-7">
                             <span class="line-v"></span>
                             <h2 class="x32 cl-purple">What is <br><span class="cl-blue">Media Science</span></h2>
@@ -374,7 +390,7 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>            
-                <div class="container">
+                <div class="container ozps">
                     <div class="row">
                         <div class="clearfix"></div>
                         <div class="col-lg-12">
@@ -449,30 +465,32 @@
                 
                 <div class="container v2">
                     <div class="row">
-                        <div class="col-lg-7">
-                            <span class="line-v bg-white"></span>
-                            <h2 class="x32 cl-white">Brand <br><span class="cl-yellow">Advocacy</span></h2>
-                            <div class="col-lg-2 nopadding-left">
-                                <span class="line-h bg-white"></span>
-                            </div>
-                            <div class="col-lg-10">
-                                <h3 class="nb ltsp3 cl-yellow">WORK</h3>
-                                <div class="col-lg-11 nopadding-left clearfix">
-                                    <p class="os1 cl-white">We are happy to provide innovative channel solutions and create tailor-made content to inspire & engage the audience. It is our intention to create impact through touchpoints for consumer & brand to interact and build ‘earned brand’ via brand advocacy.</p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <span class="readmore cosls cl-white" id="collapse3"><span class="readcs active">READ MORE</span><span class="readcs2">READ LESS</span></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 imopt1"><img src="imgs/img-work.jpg"></div>
-                        <div class="clearfix"></div>
-                        <div class="coll" id="collapse3tab">
-                            <div class="col-lg-10 col-lg-offset-1 text-center">
-                                <h2 class="pa1 cl-white">The quality of the brand is<br>determined by the its values<br>and beliefs that bind the audience<br>to become a part of the<br>interaction within the brand’s<br>ecosystem.</h2>
-                                <p class="opsans os2 cl-white">Media Science is a  fundamental method to create effective and efficient media communication campaign to achieve creativity and innovation in interacting with the audience. Designing a two-way mutual interaction between the brand and the audience within the brand’s communication ecosystem is the competitive advantage to an impactful campaign not only in having the message simply told, moreso it is demonstrated and experieced. The brand as an ecosystem of communication and interaction provides comprehensive solution that bonds the consumers as part or the brand’s existence.</p>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="col-lg-5 imopt1 imopt2"><img src="imgs/img-work.jpg"></div>
+    <div class="col-lg-7">
+        <span class="line-v bg-white"></span>
+        <h2 class="x32 cl-white">Brand <br><span class="cl-yellow">Advocacy</span></h2>
+        <div class="col-lg-2 nopadding-left">
+            <span class="line-h bg-white"></span>
+        </div>
+        <div class="col-lg-10">
+            <h3 class="nb ltsp3 cl-yellow">WORK</h3>
+            <div class="col-lg-11 nopadding-left clearfix">
+                <p class="os1 cl-white">We are happy to provide innovative channel solutions and create tailor-made content to inspire & engage the audience. It is our intention to create impact through touchpoints for consumer & brand to interact and build ‘earned brand’ via brand advocacy.</p>
+            </div>
+            <div class="clearfix"></div>
+            <span class="readmore cosls cl-white" id="collapse3"><span class="readcs active">READ MORE</span><span class="readcs2">READ LESS</span></span>
+        </div>
+    </div>
+    <div class="col-lg-5 imopt1"><img src="imgs/img-work.jpg"></div>
+    <div class="clearfix"></div>
+
+    <div class="coll" id="collapse3tab">
+    <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h2 class="pa1 cl-white">The quality of the brand is<br>determined by the its values<br>and beliefs that bind the audience<br>to become a part of the<br>interaction within the brand’s<br>ecosystem.</h2>
+        <p class="opsans os2 cl-white">Media Science is a  fundamental method to create effective and efficient media communication campaign to achieve creativity and innovation in interacting with the audience. Designing a two-way mutual interaction between the brand and the audience within the brand’s communication ecosystem is the competitive advantage to an impactful campaign not only in having the message simply told, moreso it is demonstrated and experieced. The brand as an ecosystem of communication and interaction provides comprehensive solution that bonds the consumers as part or the brand’s existence.</p>
+    </div>
+    </div>
+</div>
                 </div>
 
             </section>
@@ -696,7 +714,7 @@
     var parallax = new Parallax(scene);
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main_cst").style.marginRight = "250px";
+        // document.getElementById("main_cst").style.marginRight = "250px";
     }
 
     function closeNav() {

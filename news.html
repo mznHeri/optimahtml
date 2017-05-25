@@ -27,7 +27,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>      
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+    
     
     <script>
         $(function() {
@@ -47,11 +47,95 @@
                     }
                 }
             });
+
+            $( "#collapse1 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse1 .readcs2").addClass("active");
+                $( "#collapse1tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse1 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse1 .readcs").addClass("active");
+                $( "#collapse1tab" ).hide('fast').removeClass("active");
+            });
+
+
+            $( "#collapse2 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse2 .readcs2").addClass("active");
+                $( "#collapse2tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse2 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse2 .readcs").addClass("active");
+                $( "#collapse2tab" ).hide('fast').removeClass("active");
+            });
+
+            $( "#collapse3 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse3 .readcs2").addClass("active");
+                $( "#collapse3tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse3 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse3 .readcs").addClass("active");
+                $( "#collapse3tab" ).hide('fast').removeClass("active");
+            });
+
+            $( "#collapse4 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse4 .readcs2").addClass("active");
+                $( "#collapse4tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse4 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse4 .readcs").addClass("active");
+                $( "#collapse4tab" ).hide('fast').removeClass("active");
+            });
+
+            var mainNav = $("#mainNav");
+            var menu = $("#main-menu .row");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll < 100) {
+                    mainNav.addClass('navbar-fixed-top affix-top');
+                    mainNav.removeClass('navbar-fixed-top affix');
+                } else {
+                    mainNav.removeClass('navbar-fixed-top affix-top');
+                    mainNav.addClass('navbar-fixed-top affix');
+                }
+            });
+
         });
     </script>
 </head>
 <body>
-
+    <nav id="mainNav" class="navbar navbar-default navbar-custom">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left mzn_logo_cst">
+                    <li><a href=""><img src="imgs/optima_logo.png"></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right social_header">
+                    <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a onclick="openNav()" href="#sidemenu">&#9776;</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <header>
         <div id="main_cst" class="main_cst">
             <section id="one" class="news">
@@ -60,28 +144,6 @@
                         <div class="row">
                             <div class="col-lg-12">
 
-<nav id="mainNav" class="navbar navbar-custom">
-    <div class="container">
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-left mzn_logo_cst">
-                <li><a href=""><img src="imgs/optima_logo.png"></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right social_header">
-                <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                <li>
-                    <a onclick="openNav()" href="#sidemenu">&#9776;</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
 
                             </div>
                         </div>

@@ -27,7 +27,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>      
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+    
     
     <script>
         $(function() {
@@ -47,11 +47,95 @@
                     }
                 }
             });
+
+            $( "#collapse1 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse1 .readcs2").addClass("active");
+                $( "#collapse1tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse1 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse1 .readcs").addClass("active");
+                $( "#collapse1tab" ).hide('fast').removeClass("active");
+            });
+
+
+            $( "#collapse2 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse2 .readcs2").addClass("active");
+                $( "#collapse2tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse2 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse2 .readcs").addClass("active");
+                $( "#collapse2tab" ).hide('fast').removeClass("active");
+            });
+
+            $( "#collapse3 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse3 .readcs2").addClass("active");
+                $( "#collapse3tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse3 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse3 .readcs").addClass("active");
+                $( "#collapse3tab" ).hide('fast').removeClass("active");
+            });
+
+            $( "#collapse4 .readcs" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse4 .readcs2").addClass("active");
+                $( "#collapse4tab" ).show('slow').addClass("active");
+            });
+
+            $( "#collapse4 .readcs2" ).click(function() {
+                $(this).removeClass("active");
+                $("#collapse4 .readcs").addClass("active");
+                $( "#collapse4tab" ).hide('fast').removeClass("active");
+            });
+
+            var mainNav = $("#mainNav");
+            var menu = $("#main-menu .row");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll < 100) {
+                    mainNav.addClass('navbar-fixed-top affix-top');
+                    mainNav.removeClass('navbar-fixed-top affix');
+                } else {
+                    mainNav.removeClass('navbar-fixed-top affix-top');
+                    mainNav.addClass('navbar-fixed-top affix');
+                }
+            });
+
         });
     </script>
 </head>
 <body>
-
+    <nav id="mainNav" class="navbar navbar-default navbar-custom">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left mzn_logo_cst">
+                    <li><a href=""><img src="imgs/optima_logo.png"></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right social_header">
+                    <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a onclick="openNav()" href="#sidemenu">&#9776;</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <header>
         <div id="main_cst" class="main_cst">
             <section id="one">
@@ -72,15 +156,7 @@
                                         <div class="intro-text">
                                             <h1>Creativity and Innovation<br><span class="cl-blue">in Media Science</span></h1>
                                             <div class="scroll_down">
-                                                <img src="imgs/scroll_down_a.png">
-                                                <!-- <div class="line-arrow-down-center">
-                                                    <div class="arrow-down"></div>
-                                                    <div class="head-arrow-down"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                                    <div class="img-scroll-down">
-                                                        <img src="imgs/scroll_down.png">
-                                                    </div>
-                                                </div> -->
-                                                
+                                                <img src="imgs/scroll_down_a.png">          
                                             </div>
                                         </div>
                                     </div>
@@ -88,50 +164,17 @@
                             </div>
                         </li>
 
-                        <li class="layer" data-depth="0.00">
+                        <!-- <li class="layer" data-depth="0.00">
                             <div class="container" id="maincontent" tabindex="-1">
                                 <div class="row">
                                     <div class="col-lg-12">
 
-<nav id="mainNav" class="navbar navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-<!--             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-            </div> -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-left mzn_logo_cst">
-                    <li><a href=""><img src="imgs/optima_logo.png"></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right social_header">
-                    <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                    <li>
-                        <a onclick="openNav()" href="#sidemenu">&#9776;</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
 
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <!-- <li class="layer" data-depth="1.00"><img src="imgs/layer1.png"></li>
-                        <li class="layer" data-depth-x="0.80" data-depth-y="-0.80"><img src="imgs/layer2.png"></li>
-                        <li class="layer" data-depth-x="-0.60" data-depth-y="-0.20"><img src="imgs/layer3.png"></li>
-                        <li class="layer" data-depth="0.40" data-depth-y="-0.30"><img src="imgs/layer4.png"></li>
-                        <li class="layer" data-depth="0.20"><img src="imgs/layer5.png"></li> -->
+                        </li> -->
                     </ul>            
                 </div>
 
@@ -151,13 +194,13 @@
                                     <p class="os1">There are many variety of media channels to choose from to distribute messages in any communication campaign. As the message sender, we must consider how each medium will shape the content via all media channels like television, print, radio, website, social media channels, out of home, etc. </p>
                                 </div>
                                 <div class="clearfix"></div>
-                                <span class="readmore" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">READ MORE</span>
+                                <span class="readmore cosls" id="collapse1"><span class="readcs active">READ MORE</span><span class="readcs2">READ LESS</span></span>
                             </div>
                         </div>
                         <div class="col-lg-5 imopt1"><img src="imgs/img-about.jpg"></div>
                         <div class="clearfix"></div>
 
-                        <div class="collapse" id="collapseExample">
+                        <div class="coll" id="collapse1tab">
                         <div class="col-lg-10 col-lg-offset-1 text-center">
                             <h2 class="pa1 cl-purple">To use each media effectively,<br>we have to gain an understanding<br>how each channel  gives form to the communication.</h2>
                             <p class="opsans os2">According to Marshall McLuhan’s  “The Medium is the Message:” each medium, independent of the content it mediates, has its own intrinsic effects which are its unique message. It is the “medium that shapes and controls the scale and form of human association and action.” (Understanding Media, NY, 1964, p. 9). <br><br>The media channel will determine how the message will be transmitted and distributed. Therefore, the media channel will influence the way the audience will receive the message and impact the communication effect.</p>
@@ -177,7 +220,7 @@
                                             <div class="clearfix"></div>
                                             <span class="ttl">Innovative<br>Channel Solutions</span>
                                             <div class="clearfix"></div>
-                                            <button type="button" class="readmore ltsp2" data-toggle="modal" data-target="#myModal1">READ MORE</button>  
+                                            <button type="button" class="readmore wauto ltsp2" data-toggle="modal" data-target="#myModal1">READ MORE</button>  
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +233,7 @@
                                             <div class="clearfix"></div>
                                             <span class="ttl">Content to<br>Inspire & Engage</span>
                                             <div class="clearfix"></div>
-                                            <button type="button" class="readmore ltsp2" data-toggle="modal" data-target="#myModal2">READ MORE</button>
+                                            <button type="button" class="readmore wauto ltsp2" data-toggle="modal" data-target="#myModal2">READ MORE</button>
                                         </div>
                                     </div>
                                 </div>
@@ -203,7 +246,7 @@
                                             <div class="clearfix"></div>
                                             <span class="ttl">Brand Interaction &<br>Brand Advocacy</span>
                                             <div class="clearfix"></div>
-                                            <button type="button" class="readmore ltsp2" data-toggle="modal" data-target="#myModal3">READ MORE</button>
+                                            <button type="button" class="readmore wauto ltsp2" data-toggle="modal" data-target="#myModal3">READ MORE</button>
                                         </div>
                                     </div>
                                 </div>
@@ -308,13 +351,15 @@
                                     <p class="os1 cl-white">We develop media communication plan including strategy and tactical methods to achieve the campaign’s objective, and launch a brand campaign.  We look into the use of effective media aiming for consumer interaction  with creative blend  whilst ensuring efficiency.</p>
                                 </div>
                                 <div class="clearfix"></div>
-                                <span class="readmore cl-white" href="#">READ MORE</span>
+                                <span class="readmore cosls cl-white" id="collapse2"><span class="readcs active">READ MORE</span><span class="readcs2">READ LESS</span></span>
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="col-lg-10 col-lg-offset-1 text-center">
-                            <h2 class="pa1 cl-white">We believe in the role of audience<br>interaction in creating and<br>executing a media communication<br>plan cohesively.</h2>
-                            <p class="opsans os2 cl-white">Since our inception, we’ve provided media services to clients such as Astra International, Sanken, Gulaku and Sequislife along with portfolio of industries including technology, healthcare, financial, retail, residential,<br>education and the nonprofit sector.</p>
+                        <div class="coll" id="collapse2tab">
+                            <div class="col-lg-10 col-lg-offset-1 text-center">
+                                <h2 class="pa1 cl-white">We believe in the role of audience<br>interaction in creating and<br>executing a media communication<br>plan cohesively.</h2>
+                                <p class="opsans os2 cl-white">Since our inception, we’ve provided media services to clients such as Astra International, Sanken, Gulaku and Sequislife along with portfolio of industries including technology, healthcare, financial, retail, residential,<br>education and the nonprofit sector.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -416,14 +461,16 @@
                                     <p class="os1 cl-white">We are happy to provide innovative channel solutions and create tailor-made content to inspire & engage the audience. It is our intention to create impact through touchpoints for consumer & brand to interact and build ‘earned brand’ via brand advocacy.</p>
                                 </div>
                                 <div class="clearfix"></div>
-                                <span class="readmore cl-white" href="#">READ MORE</span>
+                                <span class="readmore cosls cl-white" id="collapse3"><span class="readcs active">READ MORE</span><span class="readcs2">READ LESS</span></span>
                             </div>
                         </div>
                         <div class="col-lg-5 imopt1"><img src="imgs/img-work.jpg"></div>
                         <div class="clearfix"></div>
-                        <div class="col-lg-10 col-lg-offset-1 text-center">
-                            <h2 class="pa1 cl-white">The quality of the brand is<br>determined by the its values<br>and beliefs that bind the audience<br>to become a part of the<br>interaction within the brand’s<br>ecosystem.</h2>
-                            <p class="opsans os2 cl-white">Media Science is a  fundamental method to create effective and efficient media communication campaign to achieve creativity and innovation in interacting with the audience. Designing a two-way mutual interaction between the brand and the audience within the brand’s communication ecosystem is the competitive advantage to an impactful campaign not only in having the message simply told, moreso it is demonstrated and experieced. The brand as an ecosystem of communication and interaction provides comprehensive solution that bonds the consumers as part or the brand’s existence.</p>
+                        <div class="coll" id="collapse3tab">
+                            <div class="col-lg-10 col-lg-offset-1 text-center">
+                                <h2 class="pa1 cl-white">The quality of the brand is<br>determined by the its values<br>and beliefs that bind the audience<br>to become a part of the<br>interaction within the brand’s<br>ecosystem.</h2>
+                                <p class="opsans os2 cl-white">Media Science is a  fundamental method to create effective and efficient media communication campaign to achieve creativity and innovation in interacting with the audience. Designing a two-way mutual interaction between the brand and the audience within the brand’s communication ecosystem is the competitive advantage to an impactful campaign not only in having the message simply told, moreso it is demonstrated and experieced. The brand as an ecosystem of communication and interaction provides comprehensive solution that bonds the consumers as part or the brand’s existence.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -445,10 +492,13 @@
                             <h2 class="sx-small text-center cl-yellow ltsp2">COMMUNITY MARKETING</h2>
                             <h3 class="sx-big text-center cl-white ">Community Marketing  to achieve<br>a bigger purpose for effective<br>communication result. </h3>
                             <div class="clearfix"></div>
-                            <span class="readmore cl-white dsp-block" href="#">READ MORE</span>
+                            <span class="readmore cosls cl-white dsp-block text-center" id="collapse4"><span class="readcs active">READ MORE</span><span class="readcs2">READ LESS</span></span>
+                            <!-- <span class="readmore cl-white dsp-block" href="#">READ MORE</span> -->
                             <div class="clearfix"></div>
+                            <div class="coll" id="collapse4tab">
                             <div class="col-lg-8 col-lg-offset-2 text-center">
                                 <p class="opsans os2 cl-white">The collaboration between Optima Media and InterfaceBPN gave birth to  Community Marketing as an innovative medium channel to optimize and create that competitive advantage to the existing media channels ie. ATL, BTL and digital.  Community Marketing adds value to today’s marketing & communication industry. The communication method today demands interaction with the public. The shift in the public’s communication and social dynamics is due to the dominant impact of the digital media that encourages the community groupings to take form and shape as part of today’s social phenomenon. <br><br>Community Marketing is an innovative method adapted to the dynamics of the society today. It is strongly characterized by the partnership value that reaches and interacts directly with the purpose of every communities. Furthermore, it can inspire to create new communities. The competitive advantage of community marketing is the capacity to engage with communities that function as influencers and organic brand advocates.<br><br>Communities contribute to the brand via collaborative programs ie. events/competitions, content generation and participation and interaction therefore adding value to the brand communication.</p>
+                            </div>
                             </div>
                         </div>
                         </div>
@@ -506,7 +556,7 @@
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center margintop30"><a class="readmore cl-white ltsp2" href="news.html" target="_blank">ALL NEWS</a></div>
+                        <div class="col-lg-12 text-center margintop30"><a class="readmore wauto cl-white ltsp2" href="news.html" target="_blank">ALL NEWS</a></div>
                     </div>
                 </div>
             </section>

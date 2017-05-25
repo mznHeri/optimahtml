@@ -240,7 +240,7 @@ img {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
     background-color: #FFFFFF;
@@ -475,6 +475,7 @@ h2.x32 {
     color: #061341;
     display: inline-block;
     cursor: pointer;
+    width: 134px;
 }
 
 .readmore:hover {
@@ -1279,6 +1280,93 @@ span.sh {
 
 .bg-white {
     background: #FFFFFF;
+}
+
+.readcs, .readcs2, .coll {
+  display: none;
+  opacity: 0;
+
+}
+
+.readcs.active, .readcs2.active, .coll.active {
+  display: block;  
+  opacity: 1;
+}
+
+.readcs, .readcs2 {    
+    width: 100%;
+    padding: 12px 35px;
+}
+
+.readmore.cosls {
+  padding: 0;
+}
+
+.wauto {
+  width: auto;
+}
+
+.navbar-custom {
+    background: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border: 1px solid;
+    width: 100%;
+    border: none;
+}
+
+.navbar-custom {
+    background: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border: 1px solid;
+    width: 100%;
+    border: none;
+}
+
+.navbar-custom.navbar-fixed-top {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+
+.affix .mzn_logo_cst img {
+    width: 50%;
+    padding-left: 20px;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+
+.affix .navbar-nav.mzn_logo_cst {
+    padding-top: 0;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+
+.affix .navbar-nav.social_header {
+    padding-top: 25px;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+
+.affix .navbar-nav.social_header {
+    padding-top: 25px;
+    padding-right: 15px;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
 }
 
 @media (max-width: 1200px) {
